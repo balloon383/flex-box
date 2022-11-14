@@ -51,8 +51,6 @@ q:before, q:after {
 width: 1920px;
 margin: 0 auto;
 background-color: white;
-display: flex;
-flex-flow: column nowrap;
 /* height: 100%; */
 }
 /* header  */
@@ -90,14 +88,11 @@ flex-flow: column nowrap;
 
 /* main-box */
 .main-box{
-    width: 1920px;
-    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .design{
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    width: 540px;
+        
 }
 .design h1{
     font-weight: 500;
@@ -109,6 +104,7 @@ flex-flow: column nowrap;
     font-weight: 400;
     line-height: 26px;
     color: #727272;
+    width: 540px;
 }
 .button{
     background-color: yellow;
@@ -120,6 +116,29 @@ flex-flow: column nowrap;
     color: #020509;
     cursor: pointer;
 }
+/* about-me */
+.about-me{
+    width: 1920px;
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgba(0, 207, 250, 0.05);
+    flex-grow: 1;
+}
+.header-two{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #020509;
+}
+.fish-text{
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    width: 540px;
+}
+
+
 
 
 
