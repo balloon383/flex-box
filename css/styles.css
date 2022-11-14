@@ -47,21 +47,26 @@ q:before, q:after {
 }
 /* end of reset css */
 
+
+
 .wrapper    {
 width: 1920px;
 margin: 0 auto;
 background-color: white;
+display: flex;
+flex-flow: column nowrap;
 /* height: 100%; */
 }
 /* header  */
 .header {
     background-color: #020509;
-    width: 1920px;
-    border: 1px solid;
-    padding: 33px 0px;
+    height: 95px;
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
+    align-items: center;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .header h2{
     font-size: 16px;
@@ -87,25 +92,7 @@ background-color: white;
 }
 
 /* main-box */
-.main-box{
-    display: flex;
-    flex-flow: column nowrap;
-}
-.design{
-        
-}
-.design h1{
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 79px;
-    color: #020509;
-}
-.design p{
-    font-weight: 400;
-    line-height: 26px;
-    color: #727272;
-    width: 540px;
-}
+
 .button{
     background-color: yellow;
     border: 0px solid yellow;
@@ -116,14 +103,6 @@ background-color: white;
     color: #020509;
     cursor: pointer;
 }
-/* about-me */
-.about-me{
-    width: 1920px;
-    display: flex;
-    flex-flow: column nowrap;
-    background: rgba(0, 207, 250, 0.05);
-    flex-grow: 1;
-}
 .header-two{
     font-weight: 500;
     font-size: 32px;
@@ -132,11 +111,114 @@ background-color: white;
     color: #020509;
 }
 .fish-text{
+    font-weight: 400;
+    font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #727272;
     width: 540px;
+    align-self: center;
+} 
+
+/* design */
+.design-flex-wrapper{
+    background-color: #fff;
 }
+.design-box{
+    background: #fff;
+    width: 540px;
+    margin-left: 300px;
+}
+.design-box > h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #020509;  
+    margin: 252px 0px 45px;
+}
+.design-box > p{
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 45px;
+}
+.design-box > button{
+    margin-bottom: 181px;
+}
+/* about-me */
+.about-me{
+    background: rgba(0, 207, 250, 0.05);
+    display: flex;
+    flex-flow: column nowrap;
+}
+.about-me > h2{
+    margin-bottom: 65px;
+}
+.about-me > p{
+    margin-bottom: 85px;
+}
+/* projects-box */
+.projects{
+    background: #020509;
+    color: #fff;
+    line-height: 15px;
+    height: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.ul-flex-box{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.projects-coutn-flex-wrapper{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.fourty-word{
+    font-size: 24px;
+    line-height: 25px;
+}
+/* how do i work */
+.how-do-i-work{
+    background: rgba(0, 207, 250, 0.05);
+    display: flex;
+    flex-flow: column nowrap;
+}
+.how-do-i-work > h2{
+    margin-top: 85px;
+    margin-bottom: 65px;
+}
+.how-do-i-work > p{
+    margin-bottom: 85px;
+}
+.big-image{
+    width: 1200px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 70px;
+}
+.how-do-i-work > button{
+    margin-bottom: 70px;
+    align-self: center;
+}
+/* footer */
+.footer {
+    background-color: #020509;
+    color: #fff;
+    border: 1px solid;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
 
 
 
