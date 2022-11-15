@@ -28,11 +28,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-	background-image: url('');
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-	
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;	
 }
 ol, ul {
 	list-style: none;
@@ -50,30 +47,29 @@ q:before, q:after {
 
 
 .wrapper    {
-width: 1920px;
-margin: 0 auto;
-background-color: white;
-display: flex;
-flex-flow: column nowrap;
-/* height: 100%; */
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 /* header  */
 .header {
     background-color: #020509;
-    height: 95px;
-    display: flex;
-    justify-content: space-around;
     text-transform: uppercase;
-    align-items: center;
-    border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 157px;
 }
-.header h2{
+.header-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10px;
+}
+.header .logo{
     font-size: 16px;
     font-weight: 900;
     color: #D4DDE1;
-    line-height: 26.26px;
+    line-height: 26px;
     letter-spacing: 8px;
 }
 .header-list{
@@ -83,8 +79,7 @@ flex-flow: column nowrap;
 .header >li, a{
     color: #D4DDE1;    
     text-decoration: none;
-    line-height: 26.25px;
-    letter-spacing: 10%;
+    letter-spacing: 0.1em;
 
 }
 .word-main{
@@ -93,13 +88,10 @@ flex-flow: column nowrap;
 }
 
 /* main-box */
-
 .button{
-    background-color: yellow;
-    border: 0px solid yellow;
-    width: 225px;
-    height: 65px;
-    line-height: 26px;
+    background-color: #FFCE38;
+    border: 0;
+    padding: 25px 75px;
     letter-spacing: 0.1em;
     color: #020509;
     cursor: pointer;
@@ -108,27 +100,21 @@ flex-flow: column nowrap;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
-    text-align: center;
     color: #020509;
 }
 .fish-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
     text-align: center;
     color: #727272;
     width: 540px;
-    align-self: center;
 } 
 
 /* design */
-.design-flex-wrapper{
-    background-color: #fff;
+.design{
+    padding: 157px 0px 180px;
 }
 .design-box{
     background: #fff;
     width: 540px;
-    margin-left: 300px;
 }
 .design-box > h1{
     font-weight: 500;
@@ -138,72 +124,68 @@ flex-flow: column nowrap;
     margin-bottom: 45px;
 }
 .design-box > p{
-    line-height: 26px;
     color: #727272;
     margin-bottom: 45px;
 }
-.design-box > button{
-    margin-bottom: 96px;
-}
-/* about-me */
+/* about-me-box*/
 .about-me{
     background: rgba(0, 207, 250, 0.05);
-    display: flex;
-    flex-flow: column nowrap;
-}
-.about-me > h2{
-    margin-bottom: 65px;
+    padding-bottom: 85px;
     padding-top: 85px;
+    text-align: center;
 }
-.about-me > p{
-    margin-bottom: 85px;
+.about-me-box{
+    margin: 0 auto;
+    width: 540px;
 }
+.about-me-box > h2{
+    margin-bottom: 65px;
+}
+
 /* projects-box */
 .projects{
     background: #020509;
     color: #fff;
     line-height: 15px;
-    height: 250px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
+    padding: 86px 0px;
 }
-
 .ul-flex-box{
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    text-align: center;
 }
-.projects-coutn-flex-wrapper{
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
+.ul-flex-box img{
+    margin-bottom: 10px;
 }
 .fourty-word{
     font-size: 24px;
-    line-height: 25px;
+    margin-right: 10px;
 }
+
 /* how do i work */
 .how-do-i-work{
     background: rgba(0, 207, 250, 0.05);
-    display: flex;
-    flex-flow: column nowrap;
+    text-align: center;
+    
+}
+.how-do-i-work-box{
+    width: 540px;
+    padding: 85px 0px;
+    margin: 0px auto;
 }
 .how-do-i-work > h2{
     margin-top: 85px;
     margin-bottom: 65px;
+    
 }
 .how-do-i-work > p{
-    margin-bottom: 85px;
+    margin-bottom: px;
 }
-.big-image{
-    width: 1200px;
-    height: auto;
-    align-self: center;
+.how-do-i-work .big-image{
     margin-bottom: 70px;
 }
-.how-do-i-work > button{
+.how-do-i-work .button{
     margin-bottom: 70px;
     align-self: center;
 }
@@ -211,22 +193,9 @@ flex-flow: column nowrap;
 .footer {
     background-color: #020509;
     color: #fff;
-    border: 1px solid;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     font-size: 18px;
-    line-height: 25px;
+    padding: 37px 0px;
 }
-
-
-
-
-
-
-
-/* .footer {
-    background-color: #020509;
-    color: white;
-} */
+.footer-box{
+    text-align: center;
+}
