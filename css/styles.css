@@ -151,7 +151,7 @@ q:before, q:after {
 }
 .ul-flex-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: uppercase;
     text-align: center;
 }
